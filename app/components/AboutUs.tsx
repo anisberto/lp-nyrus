@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "./ui/button"
 import { Play } from "lucide-react"
 
@@ -18,9 +19,11 @@ export default function AboutUs() {
 
           {/* Right Column */}
           <div className="relative group">
-            <img
-              src={`https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-28%20at%2020.11.03-jPYromoY3IP5X5pLjfoqsAep5EOEkz.png`}
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-28%20at%2020.11.03-jPYromoY3IP5X5pLjfoqsAep5EOEkz.png"
               alt="Dashboard Analytics"
+              width={600} // Defina uma largura realista
+              height={400} // Defina uma altura realista
               className="w-full rounded-lg shadow-xl"
             />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -37,4 +40,3 @@ export default function AboutUs() {
     </section>
   )
 }
-
